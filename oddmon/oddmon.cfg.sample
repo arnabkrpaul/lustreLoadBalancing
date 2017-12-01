@@ -1,0 +1,56 @@
+[global] 
+ 
+interval        = 30 
+# Time (in seconds) between data dump to the RMQ server
+
+#disabled_plugins = metric_ost_stats, metric_ost_brw_stats
+# Comma separated list of plugins that should not be used even if they're
+# they're found.  The entry is optional and may be commented out.
+ 
+[DB] 
+ 
+type            = sqlite3 
+url             = oddmon.db  
+ 
+[rabbitmq] 
+ 
+username        = guest
+password        = guest
+broker          = localhost
+port            = 5672
+use_ssl         = false
+virt_host       = /
+routing_key     = oddmon
+queue           = oddmon
+
+[metric_ost_brw_stats]
+
+save_dir       = /tmp
+#save_dir       = /data/splunk/BRW_Stats
+
+[metric_ost_job_stats]
+
+save_dir       = /tmp
+#save_dir       = /data/splunk/BRW_Stats
+
+[metric_oss_stats]
+save_dir       = /tmp
+
+[metric_ost_stats]
+save_dir       = /tmp
+
+[metric_oss_lnet_stats]
+save_dir       = /tmp
+
+[metric_mdt_stats]
+save_dir       = /tmp
+
+[metric_mds_stats]
+save_dir       = /tmp
+
+
+
+[metric_mds_lnet_stats]
+save_dir       = /tmp
+
+

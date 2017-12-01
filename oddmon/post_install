@@ -1,0 +1,5 @@
+# Post install scriptlet
+if [ ! -e /etc/oddmon/oddmon.cfg ]
+then
+	cp /etc/oddmon/oddmon.cfg.sample /etc/oddmon/oddmon.cfg
+fi

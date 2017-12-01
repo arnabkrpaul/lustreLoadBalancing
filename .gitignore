@@ -1,0 +1,5 @@
+# Executables
+*.pyc
+
+# Output Files
+*.csv
