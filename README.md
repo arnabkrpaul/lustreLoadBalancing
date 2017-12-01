@@ -23,7 +23,7 @@ MDS: ostRequestHandler.py receives the requests from the client, performs mappin
 
 *AppLog2.txt: Sample requests for HACC I/O
 
-ODDMON package: Modified the already existing ORNL oddmon package to collect statistics.
+ODDMON package (inside Statistics Gatherer): Modified the already existing ORNL oddmon package to collect statistics.
 	
 	oddpub.py: Deployed on OSS to publish the OSS and OST statistics defined in metric_plugins to MDS via RabbitMQ.
 
